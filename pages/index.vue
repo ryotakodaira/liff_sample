@@ -40,11 +40,7 @@ export default {
         .sendMessages([
           {
             type: 'text',
-            text: `お名前：\n${this.formData.name}`
-          },
-          {
-            type: 'text',
-            text: '送信が完了しました'
+            text: `お名前：${this.formData.name}`
           }
         ])
         .then(() => {
