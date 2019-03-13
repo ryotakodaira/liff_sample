@@ -21,6 +21,15 @@ export default {
       lineId: null
     }
   },
+  created() {
+    if (!this.canUseLIFF()) {
+      return
+    }
+
+    window.liff.init(data => {
+      this.lineId = data.context.userId || null
+    })
+  },
   methods: {
     onSubmit() {
       if (!this.canUseLIFF()) {
