@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <p class="line-id">LINE ID：{{ lineId }}</p>
+    <p class="line-id">LINE ID：xxxxxxxxx</p>
     <div class="form">
       <div class="control">
         <input class="input" type="text" placeholder="お名前" v-model="formData.name">
