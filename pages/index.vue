@@ -21,7 +21,7 @@ export default {
       lineId: null
     }
   },
-  created() {
+  mounted() {
     if (!this.canUseLIFF()) {
       return
     }
